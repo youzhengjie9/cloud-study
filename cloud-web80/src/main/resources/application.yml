@@ -1,0 +1,12 @@
+server:
+  port: 80
+spring:
+  application:
+    name: web-comsumer
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka-server7001.com:7001/eureka/

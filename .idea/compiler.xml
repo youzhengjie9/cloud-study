@@ -3,6 +3,23 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-commons" />
+        <module name="cloud-web80" />
+        <module name="cloud-eureka7001" />
+        <module name="cloud-user8001" />
+        <module name="doc" />
+        <module name="cloud-doc" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-doc" target="10" />
+      <module name="cloud-payment8001" target="10" />
+      <module name="cloud-user" target="10" />
+      <module name="doc" target="10" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -7,8 +7,19 @@
     <groupId>com.cloud</groupId>
     <artifactId>cloud01</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>cloud-payment8001</module>
+        <module>cloud-commons</module>
+        <module>cloud-user</module>
+        <module>cloud-user8001</module>
+        <module>cloud-web80</module>
+        <module>cloud-eureka7001</module>
+        <module>doc</module>
+        <module>cloud-doc</module>
+        <module>cloud-doc</module>
+    </modules>
 
-<!--    修改打包方式为pom-->
+    <!--    修改打包方式为pom-->
     <packaging>pom</packaging>
 
     <properties>

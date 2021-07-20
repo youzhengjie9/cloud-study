@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: user-provider
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: user-provider8001
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-server7001.com:7001/eureka/
