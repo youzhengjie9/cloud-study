@@ -10,7 +10,9 @@
         <module name="cloud-commons" />
         <module name="cloud-web80" />
         <module name="cloud-eureka7001" />
+        <module name="cloud-user8002" />
         <module name="cloud-user8001" />
+        <module name="cloud-openFeign80" />
         <module name="cloud-eureka7002" />
         <module name="doc" />
         <module name="cloud-doc" />

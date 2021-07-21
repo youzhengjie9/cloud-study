@@ -1,0 +1,31 @@
+server:
+  port: 8002
+
+
+spring:
+  application:
+    name: user-provider
+  datasource:
+    username: root
+    password: 18420163207
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud-study01?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=UTF-8
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: user-provider8002
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka-server7001.com:7001/eureka/ , http://eureka-server7002.com:7002/eureka/
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: "*"

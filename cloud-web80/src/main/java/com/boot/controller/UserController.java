@@ -18,7 +18,9 @@ public class UserController {
 
   @Resource private RestTemplate restTemplate;
 
-  private static String userController_URL = "http://localhost:8001/provider/";
+
+//  private static String userController_URL = "http://localhost:8001/provider/"; //单机版
+  private static String userController_URL = "http://USER-PROVIDER/provider/";  //ribbon负载均衡
 
   @GetMapping(path = "/userMoney/{username}")
   @ResponseBody
@@ -38,4 +40,16 @@ public class UserController {
     System.out.println(user1);
     return user1;
   }
+
+
+  //测试ribbon负载均衡（默认轮询算法）
+  @GetMapping(path = "/curPort")
+  @ResponseBody
+  public String curPort() {
+
+    String curPort = restTemplate.getForObject(userController_URL+"curPort", String.class);
+
+    return curPort;
+  }
+
 }

@@ -2,24 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cloud01</artifactId>
+        <groupId>com.cloud</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cloud</groupId>
-    <artifactId>cloud01</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>cloud-commons</module>
-        <module>cloud-user</module>
-        <module>cloud-web80</module>
-        <module>cloud-eureka</module>
-        <module>cloud-user</module>
-        <module>cloud-user</module>
-        <module>cloud-eureka</module>
-        <module>cloud-openFeign80</module>
-    </modules>
-
-    <!--    修改打包方式为pom-->
+    <artifactId>cloud-eureka</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>cloud-eureka7001</module>
+        <module>cloud-eureka7002</module>
+    </modules>
 
     <properties>
         <!--        springcloud的版本-->
@@ -85,5 +80,6 @@
 
 
     </dependencyManagement>
+
 
 </project>
