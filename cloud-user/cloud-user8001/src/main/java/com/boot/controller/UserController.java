@@ -67,4 +67,18 @@ public class UserController {
     return "当前端口："+port;
   }
 
+  @GetMapping(path = "/timeout")
+  @ResponseBody
+  public String timeout() {
+
+    try {
+      Thread.sleep(3000);  //模拟提供者超时
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+
+    return "success";
+  }
+
+
 }

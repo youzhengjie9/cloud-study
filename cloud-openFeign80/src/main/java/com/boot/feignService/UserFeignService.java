@@ -1,7 +1,9 @@
 package com.boot.feignService;
 
+import com.config.FeignLoggerConfig;
 import com.pojo.user;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,4 +32,8 @@ public interface UserFeignService {
   @GetMapping(path = "/curPort")
   @ResponseBody
   public String curPort();
+
+  @GetMapping(path = "/timeout")
+  @ResponseBody
+  public String timeout() ;
 }

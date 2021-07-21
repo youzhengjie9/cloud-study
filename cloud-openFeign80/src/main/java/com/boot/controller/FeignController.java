@@ -45,5 +45,14 @@ public class FeignController {
         return s;
     }
 
+    //测试openFeign底层的ribbon超时
+    @GetMapping(path = "/timeout")
+    @ResponseBody
+    public String timeout() {
+
+        String timeout = userFeignService.timeout();
+
+        return timeout;
+    }
 
 }
