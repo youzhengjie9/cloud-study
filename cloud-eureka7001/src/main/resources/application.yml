@@ -6,6 +6,16 @@ spring:
 
 
 #单机版配置
+#eureka:
+#  instance:
+#    hostname: eureka-server7001.com
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+#集群版配置
 eureka:
   instance:
     hostname: eureka-server7001.com
@@ -13,4 +23,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka7002.com:7002/eureka/

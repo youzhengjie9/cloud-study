@@ -17,6 +17,7 @@
         <module>doc</module>
         <module>cloud-doc</module>
         <module>cloud-doc</module>
+        <module>cloud-eureka7002</module>
     </modules>
 
     <!--    修改打包方式为pom-->

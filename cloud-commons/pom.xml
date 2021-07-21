@@ -12,4 +12,18 @@
     <artifactId>cloud-commons</artifactId>
 
 
+    <dependencies>
+        <!--      web和actuator是必备的，******除了gateway网关不能加入web包  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--        actuator用来监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
