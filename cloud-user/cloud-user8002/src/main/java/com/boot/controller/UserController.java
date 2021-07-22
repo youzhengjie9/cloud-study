@@ -82,4 +82,23 @@ public class UserController {
         return "success";
     }
 
+    /*
+   服务降级 ：降低不是核心业务的服务的优先级，减少资源的占用，给核心服务提供更多的资源
+   一般来说，服务降级是在“”消费者“”端
+   */
+
+    //下面的接口是非核心业务，需要服务降级
+    @ResponseBody
+    @GetMapping(path = "/hystrixTimeout")
+    public String hystrixTimeout(){
+
+        try {
+            Thread.sleep(6000); //模拟处理业务的耗时
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "hystrixTimeout_success";
+
+    }
+
 }
