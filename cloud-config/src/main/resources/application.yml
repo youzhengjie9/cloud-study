@@ -12,9 +12,22 @@ spring:
           search-paths:
             - could-config   #仓库名
       label: master   #分支
+  #配置springcloud bus需要的rabbitmq
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+    port: 5672
 
 
 eureka:
   client:
     service-url:
       defaultZone: http://eureka-server7001.com:7001/eureka/ ,http://eureka-server7002.com:7002/eureka/
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"   #打开bus-refresh端口

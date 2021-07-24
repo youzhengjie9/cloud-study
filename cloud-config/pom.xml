@@ -13,6 +13,13 @@
 
 
     <dependencies>
+
+<!--        springcloud bus-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
         <!--      web和actuator是必备的，******除了gateway网关不能加入web包  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
