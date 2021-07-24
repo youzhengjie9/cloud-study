@@ -13,6 +13,11 @@
 
 
     <dependencies>
+        <!-- 包含 spring-cloud-starter-sleuth、spring-cloud-sleuth-zipkin jar -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
         <!--        引入commons模块-->
         <dependency>
             <groupId>com.cloud</groupId>

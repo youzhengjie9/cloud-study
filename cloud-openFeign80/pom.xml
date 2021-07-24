@@ -13,6 +13,15 @@
 
 
     <dependencies>
+
+
+        <!-- 包含 spring-cloud-starter-sleuth、spring-cloud-sleuth-zipkin jar -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+
+
         <!--      web和actuator是必备的，******除了gateway网关不能加入web包  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
