@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-hystrixDashboard" />
+        <module name="cloud-gateway9123" />
         <module name="cloud-commons" />
         <module name="cloud-web80" />
         <module name="cloud-eureka7001" />

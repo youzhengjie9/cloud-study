@@ -1,0 +1,36 @@
+server:
+  port: 9123
+
+spring:
+  application:
+    name: gateway9123
+#gateway网关配置
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true  #开启gateway服务发现，并且能够路由到lb://微服务名  格式的uri
+          lower-case-service-id: true  #因为注册中心的服务名都是大写，我们防止用户输入小写而检测不到，这里可以自动转换成大写
+      routes: #配置路由
+        - id: gateway-provider
+          uri: lb://USER-PROVIDER    #gateway的动态路由(负载均衡)
+          predicates:
+            - Path=/provider/**
+
+#        - id: gateway-provider8001
+#          uri: http://localhost:8001
+#          predicates:
+#            - Path=/provider/**   #注意：-Path= 是'=' 而不是  ':' ，-Path= 不能有‘’空格‘’
+
+
+
+#要注册到注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: gateway9123
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka-server7001.com:7001/eureka/ ,http://eureka-server7002.com:7002/eureka/
