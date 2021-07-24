@@ -17,6 +17,8 @@
         <module name="cloud-openFeign80" />
         <module name="cloud-eureka7002" />
         <module name="doc" />
+        <module name="cloud-config" />
+        <module name="cloud-config-clinet" />
         <module name="cloud-doc" />
       </profile>
     </annotationProcessing>

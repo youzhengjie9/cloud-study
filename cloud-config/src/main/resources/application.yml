@@ -1,0 +1,20 @@
+server:
+  port: 3331
+spring:
+  application:
+    name: config-server
+    #配置springcloud config server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/youzhengjie/could-config.git    #仓库的https地址
+          search-paths:
+            - could-config   #仓库名
+      label: master   #分支
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server7001.com:7001/eureka/ ,http://eureka-server7002.com:7002/eureka/

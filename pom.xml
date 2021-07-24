@@ -18,6 +18,8 @@
         <module>cloud-openFeign80</module>
         <module>cloud-hystrixDashboard</module>
         <module>cloud-gateway</module>
+        <module>cloud-config</module>
+        <module>cloud-config-clinet</module>
     </modules>
 
     <!--    修改打包方式为pom-->

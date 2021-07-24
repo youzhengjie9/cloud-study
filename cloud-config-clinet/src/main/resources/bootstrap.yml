@@ -1,0 +1,25 @@
+server:
+  port: 3332
+
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      #配置config client
+      label: master
+      name: application
+      uri: http://localhost:3331
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server7001.com:7001/eureka/ ,http://eureka-server7002.com:7002/eureka/
+
+#暴露所有端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
