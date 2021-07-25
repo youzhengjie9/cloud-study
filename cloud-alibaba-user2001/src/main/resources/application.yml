@@ -1,0 +1,5 @@
+#因为bootstrap.yml优先级高，先加载，所以当bootstrap.yml加载好就会从nacos配置中心拉取(cloud-alibaba-user-dev.yaml)配置文件
+#此时当加载到application.yml时，系统就有了cloud-alibaba-user-dev.yaml，我们在用spring.profiles.active=dev去切换即可
+spring:
+  profiles:
+    active: dev

@@ -1,0 +1,24 @@
+server:
+  port: 2001
+
+
+#nacos配置中心
+spring:
+  application:
+    name: cloud-alibaba-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+        namespace: a5e5cd87-df7b-4456-8249-b10af1a840f2   #注意：这里是命名空间id而不是命名空间的名称
+        group: DEV_GROUP
+
+#nacos做配置中心时需要暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

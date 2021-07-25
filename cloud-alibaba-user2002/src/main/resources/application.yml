@@ -1,0 +1,19 @@
+server:
+  port: 2002
+
+
+spring:
+  application:
+    name: cloud-alibaba-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848    #注册中心地址
+
+
+#nacos做配置中心时需要暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
