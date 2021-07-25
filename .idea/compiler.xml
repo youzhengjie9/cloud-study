@@ -7,19 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="doc" />
         <module name="cloud-hystrixDashboard" />
-        <module name="cloud-gateway9123" />
         <module name="cloud-commons" />
         <module name="cloud-web80" />
         <module name="cloud-eureka7001" />
         <module name="cloud-user8002" />
         <module name="cloud-user8001" />
         <module name="cloud-openFeign80" />
-        <module name="cloud-eureka7002" />
-        <module name="doc" />
-        <module name="cloud-config" />
-        <module name="cloud-config-clinet" />
         <module name="cloud-doc" />
+        <module name="cloud-eureka7002" />
+        <module name="cloud-gateway9123" />
+        <module name="cloud-config-clinet" />
+        <module name="cloud-config" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
