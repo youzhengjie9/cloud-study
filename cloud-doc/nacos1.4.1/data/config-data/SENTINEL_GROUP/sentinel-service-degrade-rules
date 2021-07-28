@@ -1,0 +1,1 @@
+[{"app":"sentinel-service","count":0.3,"gmtCreate":1627444014553,"gmtModified":1627444014553,"grade":1,"id":1,"ip":"192.168.184.1","limitApp":"default","minRequestAmount":5,"port":8720,"resource":"test-testB","statIntervalMs":1000,"timeWindow":1}]

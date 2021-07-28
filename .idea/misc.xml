@@ -5,10 +5,20 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/sentinel-adapter/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/sentinel-benchmark/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/sentinel-cluster/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/sentinel-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/sentinel-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/sentinel-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/sentinel-extension/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Sentinel-1.7.1/Sentinel-1.7.1/sentinel-transport/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-eureka7001/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-eureka7002/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-payment8001/pom.xml" />

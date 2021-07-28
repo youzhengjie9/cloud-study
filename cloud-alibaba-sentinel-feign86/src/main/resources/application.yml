@@ -1,0 +1,25 @@
+server:
+  port: 86
+
+
+
+
+#开启feign对Sentinel的支持======(特别重要)
+feign:
+  sentinel:
+    enabled: true
+
+
+
+spring:
+  application:
+    name: sentinel-feign
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+
