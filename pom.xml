@@ -26,6 +26,8 @@
         <module>cloud-alibaba-sentinel-service8401</module>
         <module>cloud-alibaba-sentinel-feign86</module>
         <module>cloud-alibaba-seata-web80</module>
+        <module>cloud-alibaba-seata-article</module>
+        <module>cloud-alibaba-seata-art</module>
     </modules>
 
     <!--    修改打包方式为pom-->
@@ -104,6 +106,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
 
             <!--            引入Mybatis-->
             <!--            注意：一定要导入mybatis的springBoot启动器，不要直接导入mybatis依赖，不然会没效果-->

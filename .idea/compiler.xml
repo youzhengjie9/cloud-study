@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="sentinel-demo-nacos-datasource" />
         <module name="sentinel-demo-command-handler" />
-        <module name="sentinel-demo-etcd-datasource" />
+        <module name="cloud-commons" />
         <module name="sentinel-transport-netty-http" />
         <module name="sentinel-demo-cluster-server-alone" />
         <module name="sentinel-datasource-extension" />
@@ -25,7 +25,7 @@
         <module name="sentinel-api-gateway-adapter-common" />
         <module name="sentinel-spring-webflux-adapter" />
         <module name="cloud-hystrixDashboard" />
-        <module name="sentinel-datasource-redis" />
+        <module name="sentinel-demo-etcd-datasource" />
         <module name="sentinel-spring-webmvc-adapter" />
         <module name="sentinel-demo-spring-cloud-gateway" />
         <module name="cloud-web80" />
@@ -34,6 +34,7 @@
         <module name="sentinel-datasource-apollo" />
         <module name="sentinel-transport-simple-http" />
         <module name="sentinel-demo-spring-webmvc" />
+        <module name="cloud-alibaba-seata-art5001" />
         <module name="sentinel-spring-cloud-gateway-adapter" />
         <module name="sentinel-demo-rocketmq" />
         <module name="sentinel-cluster-client-default" />
@@ -60,10 +61,11 @@
         <module name="sentinel-reactor-adapter" />
         <module name="doc" />
         <module name="sentinel-parameter-flow-control" />
+        <module name="sentinel-datasource-redis" />
         <module name="cloud-alibaba-sentinel-service8401" />
-        <module name="cloud-commons" />
         <module name="cloud-eureka7002" />
         <module name="cloud-eureka7001" />
+        <module name="cloud-alibaba-seata-tag5011" />
         <module name="sentinel-demo-basic" />
         <module name="sentinel-apache-dubbo-adapter" />
         <module name="sentinel-transport-common" />
@@ -75,6 +77,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-alibaba-seata-article" target="10" />
+      <module name="cloud-alibaba-seata-Article" target="10" />
+      <module name="cloud-alibaba-seata-article5001" target="10" />
       <module name="cloud-doc" target="10" />
       <module name="cloud-payment8001" target="10" />
       <module name="cloud-user" target="10" />

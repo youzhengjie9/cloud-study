@@ -14,7 +14,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import javax.sql.DataSource;
 
 /**
- * 配置数据源，让seata来接管
+ * 配置Mybatis数据源，让seata来接管
  */
 @Configuration
 public class DataSourceProxyConfig {
