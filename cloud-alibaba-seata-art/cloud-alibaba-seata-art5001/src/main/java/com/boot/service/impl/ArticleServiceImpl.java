@@ -65,7 +65,7 @@ public class ArticleServiceImpl implements ArticleService {
     System.out.println("文章统计数据");
 
 
-//    int i=10/0; //手动报错
+    int i=10/0; //手动报错
 
     Tag tag = new Tag();
     //**********************************
