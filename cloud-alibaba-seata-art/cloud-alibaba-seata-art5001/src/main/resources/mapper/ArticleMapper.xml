@@ -4,7 +4,7 @@
 
 <mapper namespace="com.boot.dao.ArticleMapper">
 
-    <insert id="insertArticle" parameterType="com.pojo.Article" keyProperty="id" useGeneratedKeys="true">
+    <insert id="insertArticle" parameterType="com.pojo.Article">
         insert into article(id,title) values (#{id},#{title})
     </insert>
 

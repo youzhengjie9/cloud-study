@@ -6,7 +6,7 @@
 <mapper namespace="com.boot.dao.TagMapper">
 
     <insert id="insertTag" parameterType="com.pojo.Tag">
-        insert into tag(tagName) values (#{tagName})
+        insert into tag(id,tagName) values (#{id},#{tagName})
     </insert>
 
 

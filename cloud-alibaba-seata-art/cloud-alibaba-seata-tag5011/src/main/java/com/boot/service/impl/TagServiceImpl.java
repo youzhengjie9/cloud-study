@@ -5,6 +5,7 @@ import com.boot.service.TagService;
 import com.pojo.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service("TagServiceImpl")
 public class TagServiceImpl implements TagService {
@@ -13,6 +14,7 @@ public class TagServiceImpl implements TagService {
     private TagMapper tagMapper;
 
     @Override
+    @Transactional
     public void insertTag(Tag tag) {
 
         tagMapper.insertTag(tag);

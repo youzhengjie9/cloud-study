@@ -11,5 +11,6 @@ public class ArticleFeignImpl implements ArticleFeign {
     @Override
     public String publishArticle(Article article, String tagName) {
         throw new RuntimeException("ArticleFeignImpl----fallback");
+//        return "ArticleFeignImpl----fallback";
     }
 }

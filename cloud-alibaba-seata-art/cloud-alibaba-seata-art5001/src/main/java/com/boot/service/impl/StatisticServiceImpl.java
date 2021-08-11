@@ -5,6 +5,7 @@ import com.boot.service.StatisticService;
 import com.pojo.Statistic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class StatisticServiceImpl implements StatisticService {
@@ -14,6 +15,7 @@ public class StatisticServiceImpl implements StatisticService {
 
 
     @Override
+//    @Transactional
     public void insertStatistic(Statistic statistic) {
         statisticMapper.insertStatistic(statistic);
     }

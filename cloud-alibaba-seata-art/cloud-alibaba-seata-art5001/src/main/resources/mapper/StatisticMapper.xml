@@ -5,8 +5,8 @@
 
 <mapper namespace="com.boot.dao.StatisticMapper">
     
-    <insert id="insertStatistic" parameterType="com.pojo.Statistic">
-        insert into statistic(articleid,hit) values(#{articleid},#{hit})
+    <insert id="insertStatistic" parameterType="com.pojo.Statistic" >
+        insert into statistic(id,articleid,hit) values(#{id},#{articleid},#{hit})
     </insert>
 
 

@@ -5,24 +5,24 @@ import java.io.Serializable;
 public class Statistic implements Serializable {
 
 
-    private int id;
-    private int articleid;
+    private long id;
+    private long articleid;
     private int hit;
 
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public int getArticleid() {
+    public long getArticleid() {
         return articleid;
     }
 
-    public void setArticleid(int articleid) {
+    public void setArticleid(long articleid) {
         this.articleid = articleid;
     }
 

@@ -26,7 +26,6 @@
         <module>cloud-alibaba-sentinel-service8401</module>
         <module>cloud-alibaba-sentinel-feign86</module>
         <module>cloud-alibaba-seata-web80</module>
-        <module>cloud-alibaba-seata-article</module>
         <module>cloud-alibaba-seata-art</module>
     </modules>
 
@@ -133,5 +132,16 @@
 
 
     </dependencyManagement>
+
+
+    <dependencies>
+<!--        雪花漂移算法,生成分布式id-->
+        <dependency>
+            <groupId>com.github.yitter</groupId>
+            <artifactId>yitter-idgenerator</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
