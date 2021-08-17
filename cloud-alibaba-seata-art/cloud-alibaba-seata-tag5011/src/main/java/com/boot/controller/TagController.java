@@ -24,6 +24,7 @@ public class TagController {
 
         tagService.insertTag(tag);
 
+        int i=10/0;
 
         CommonData<Tag> data = new CommonData<>();
         data.setCode(200);

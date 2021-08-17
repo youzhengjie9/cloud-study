@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="sentinel-demo-nacos-datasource" />
         <module name="sentinel-demo-command-handler" />
-        <module name="cloud-commons" />
         <module name="sentinel-transport-netty-http" />
         <module name="sentinel-demo-cluster-server-alone" />
         <module name="sentinel-datasource-extension" />
@@ -23,11 +22,11 @@
         <module name="sentinel-datasource-nacos" />
         <module name="cloud-user8002" />
         <module name="sentinel-api-gateway-adapter-common" />
+        <module name="sentinel-reactor-adapter" />
         <module name="sentinel-spring-webflux-adapter" />
         <module name="cloud-hystrixDashboard" />
         <module name="sentinel-demo-etcd-datasource" />
         <module name="sentinel-spring-webmvc-adapter" />
-        <module name="sentinel-demo-spring-cloud-gateway" />
         <module name="cloud-web80" />
         <module name="sentinel-demo-apache-dubbo" />
         <module name="sentinel-demo-zuul-gateway" />
@@ -36,21 +35,24 @@
         <module name="sentinel-demo-spring-webmvc" />
         <module name="cloud-alibaba-seata-art5001" />
         <module name="sentinel-spring-cloud-gateway-adapter" />
+        <module name="cloud-openFeign80" />
         <module name="sentinel-demo-rocketmq" />
         <module name="sentinel-cluster-client-default" />
         <module name="sentinel-cluster-server-default" />
-        <module name="sentinel-datasource-etcd" />
+        <module name="sentinel-demo-spring-cloud-gateway" />
         <module name="sentinel-datasource-spring-cloud-config" />
         <module name="sentinel-dubbo-adapter" />
         <module name="sentinel-demo-spring-webflux" />
         <module name="sentinel-demo-dubbo" />
+        <module name="sentinel-datasource-etcd" />
         <module name="cloud-config" />
         <module name="cloud-doc" />
         <module name="sentinel-demo-cluster-embedded" />
+        <module name="cloud-alibaba-sentinel-feign86" />
         <module name="sentinel-datasource-zookeeper" />
         <module name="sentinel-demo-zookeeper-datasource" />
         <module name="cloud-alibaba-seata-web80" />
-        <module name="cloud-openFeign80" />
+        <module name="cloud-commons" />
         <module name="cloud-user8001" />
         <module name="cloud-config-clinet" />
         <module name="sentinel-annotation-aspectj" />
@@ -58,14 +60,12 @@
         <module name="cloud-gateway9123" />
         <module name="sentinel-demo-dynamic-file-rule" />
         <module name="sentinel-demo-apollo-datasource" />
-        <module name="sentinel-reactor-adapter" />
+        <module name="cloud-alibaba-seata-tag5011" />
         <module name="doc" />
         <module name="sentinel-parameter-flow-control" />
-        <module name="sentinel-datasource-redis" />
         <module name="cloud-alibaba-sentinel-service8401" />
         <module name="cloud-eureka7002" />
         <module name="cloud-eureka7001" />
-        <module name="cloud-alibaba-seata-tag5011" />
         <module name="sentinel-demo-basic" />
         <module name="sentinel-apache-dubbo-adapter" />
         <module name="sentinel-transport-common" />
@@ -73,7 +73,7 @@
         <module name="sentinel-cluster-common-default" />
         <module name="sentinel-datasource-consul" />
         <module name="sentinel-web-servlet" />
-        <module name="cloud-alibaba-sentinel-feign86" />
+        <module name="sentinel-datasource-redis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

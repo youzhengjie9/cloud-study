@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 81
 
 #nacos的配置
 spring:
@@ -16,7 +16,10 @@ spring:
       seata:
         tx-service-group: my_test_tx_group
 
-
+#设置ribbon的超时时间
+ribbon:
+  ReadTimeout: 8000
+  ConnectTimeout: 8000
 
 #配置seata
 #seata:
